@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Main</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20220707172418" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__top top-header">
+            <div class="top-header__container">
+              <a href="##" class="header__top-logo"
+                ><span class="_icon-logo"></span
+              ></a>
+              <nav hidden aria-label="Site menu" class="menu-mob">
+                <button type="button" class="menu-mob__icon icon-menu">
+                  <span></span>
+                </button>
+                <div class="menu-mob__body"></div>
+              </nav>
+              <div class="header__top-info-settings">
+                <div class="header__top-date-time top-info">
+                  <span class="top-info__date" id="date">06.07.22</span>
+                  <span class="top-info__line"><br /> </span>
+                  <span
+                    class="top-info__time"
+                    id="clock"
+                    onload="currentTime()"
+                  >
+                  </span>
+                </div>
+                <div
+                  data-da=".menu-mob__body, 991.98, 2"
+                  class="header__top-settings top-settings"
+                >
+                  <button
+                    class="top-settings__background-change _icon-brightness-contrast"
+                  ></button>
+                  <button
+                    class="top-settings__lang-change _icon-sphere"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__border-line"></span>
+          <div class="header__bottom bottom-header">
+            <div class="bottom-header__container">
+              <nav
+                aria-label="Site menu"
+                class="header__bottom-nav-menu menu-nav"
+              >
+                <ul data-da=".menu-mob__body, 991.98" class="menu-nav__list">
+                  <li class="menu-nav__list-item">
+                    <a href="##" class="menu-nav__link">Home</a>
+                  </li>
+                  <li class="menu-nav__list-item">
+                    <a href="##" class="menu-nav__link">About</a>
+                  </li>
+                  <li class="menu-nav__list-item">
+                    <a href="##" class="menu-nav__link">Skills</a>
+                  </li>
+                  <li class="menu-nav__list-item">
+                    <a href="##" class="menu-nav__link">Project</a>
+                  </li>
+                  <li class="menu-nav__list-item">
+                    <a href="##" class="menu-nav__link">Contacts</a>
+                  </li>
+                  <li class="menu-nav__list-item">
+                    <a href="##" class="menu-nav__link">Resume</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__bottom-search">
+                <form data-da=".menu-mob, 991.98, 1" action="" class="search">
+                  <input
+                    class="search__input"
+                    autocomplete="off"
+                    type="search"
+                    name="form[]"
+                    data-error="ERROR"
+                    placeholder="search"
+                    id="search"
+                  />
+                  <button
+                    type="submit"
+                    class="search__btn _icon-search"
+                  ></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page"></main>
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+    <div id="popup" aria-hidden="true" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <button data-close type="button" class="popup__close">Закрыть</button>
+          <div class="popup__text">
+            <ul data-da=".menu__body-mob-settings,991.98,1" class="lang__list">
+              <li class="lang__sublist">
+                <button id="chang_lang-default" class="lang__default">
+                  Default
+                </button>
+              </li>
+              <li class="lang__sublist">
+                <button id="chang_lang-rus" href="" class="lang__rus">
+                  Rus
+                </button>
+              </li>
+              <li class="lang__sublist">
+                <button id="chang_lang-eng" href="" class="lang__eng">
+                  Eng
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js?_v=20220707172418"></script>
+  </body>
+</html>
